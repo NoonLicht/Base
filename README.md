@@ -1,5 +1,4 @@
-### Скачайте датасет и объедините за 2007 год в папку 2007, а за 2012 в 2012 соответственно.
-[Вот ссылочка на датасет](https://mega.nz/folder/h19QhRIC#0ifeKKQ0aWzNrN0NJJVhJw).
+### Скачайте [datasets](https://mega.nz/folder/h19QhRIC#0ifeKKQ0aWzNrN0NJJVhJw) и объедините за 2007 год в папку 2007, а за 2012 в 2012 соответственно.
 
 ### Скачайте [checkpoint](https://mega.nz/file/x09iGLYB#U-nxmoh4-x5K2Ftq-XKjB1WwgW8fS1fynjSDcWjkU88). 
 Его надо еще обучать, тк до сих пор в некотрых местах работает некоректно.
