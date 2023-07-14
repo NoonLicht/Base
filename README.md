@@ -6,7 +6,7 @@
 
 ###Для того, чтоб все работало вам надо установить PyTorch под свой конфиг (но нужно выбрать CUDA 11.8 для удобства).
 https://pytorch.org/get-started/locally/
-![image](https://github.com/NoonLicht/base/assets/121355541/6af58691-bd52-4cb4-a28e-fb9ec8866a8c)
+![image](https://github.com/NoonLicht/base/assets/121355541/25a12112-f2ff-4df9-9e87-d90d94e61ad7)
 
 Не забудьте еще установить CUDAToolKit   
 pip install cudatoolkit=11.8
