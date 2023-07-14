@@ -1,5 +1,5 @@
 ### Скачайте датасет и объедините за 2007 год в папку 2007, а за 2012 в 2012 соответственно.
-[Вот ссылочка на датасет]().
+[Вот ссылочка на датасет](https://mega.nz/folder/h19QhRIC#0ifeKKQ0aWzNrN0NJJVhJw).
 
 ### Скачайте [checkpoint](https://mega.nz/file/x09iGLYB#U-nxmoh4-x5K2Ftq-XKjB1WwgW8fS1fynjSDcWjkU88). 
 Его надо еще обучать, тк до сих пор в некотрых местах работает некоректно.
@@ -11,5 +11,6 @@ https://pytorch.org/get-started/locally/
 Не забудьте еще установить CUDAToolKit 
 ```
 pip install cudatoolkit=11.8
+pip install opencv-python
 ```
 Еще вам надо будет скачать [cuDNN](https://developer.nvidia.com/cudnn) тоже под CUDA 11.8.
