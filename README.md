@@ -1,4 +1,4 @@
-### Скачайте датасет [1](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar), [2](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar), [3](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar) и объедините за 2007 год в папку 2007, а за 2012 в 2012 соответственно.
+### Скачайте датасет [1](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar), [2](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar), [3](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar) и объедините за 2007 год в папку 2007, а за 2012 в 2012 соответственно.
 
 ### Вот еще 2 датасета: [1](http://images.cocodataset.org/zips/train2014.zip) и [2](http://images.cocodataset.org/zips/val2014.zip)
 
