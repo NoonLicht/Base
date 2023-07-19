@@ -2,7 +2,9 @@
 
 ### Вот еще 2 датасета: [1](http://images.cocodataset.org/zips/train2014.zip) и [2](http://images.cocodataset.org/zips/val2014.zip)
 
-### Скачайте [checkpoint](https://mega.nz/file/x09iGLYB#U-nxmoh4-x5K2Ftq-XKjB1WwgW8fS1fynjSDcWjkU88). 
+### Эти [жисоны](https://mega.nz/file/gtEiTAjQ#jgtEGh9JWjJ5tsRYmjSeGZqhL64SvRA4s0VXLaM5wPk) закинуть в папку с программой
+
+### Скачайте [checkpoint для SSD](https://mega.nz/file/x09iGLYB#U-nxmoh4-x5K2Ftq-XKjB1WwgW8fS1fynjSDcWjkU88) и [checkpoint для IC](https://mega.nz/folder/RtNwHDha#Cl5piynrtTCavAACjUziLw). 
 Его надо еще обучать, тк до сих пор в некотрых местах работает некоректно.
 
 ### Для того, чтоб все работало вам надо установить [PyTorch](https://pytorch.org/get-started/locally/) под свой конфиг (но нужно выбрать CUDA 11.8 для удобства).
