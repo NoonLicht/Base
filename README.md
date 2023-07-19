@@ -1,4 +1,6 @@
-### Скачайте [datasets](https://mega.nz/folder/h19QhRIC#0ifeKKQ0aWzNrN0NJJVhJw) и объедините за 2007 год в папку 2007, а за 2012 в 2012 соответственно.
+### Скачайте датасет [1](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar), [2](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar), [3](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar) и объедините за 2007 год в папку 2007, а за 2012 в 2012 соответственно.
+
+### Вот еще 2 датасета: [1](http://images.cocodataset.org/zips/train2014.zip) и [2](http://images.cocodataset.org/zips/val2014.zip)
 
 ### Скачайте [checkpoint](https://mega.nz/file/x09iGLYB#U-nxmoh4-x5K2Ftq-XKjB1WwgW8fS1fynjSDcWjkU88). 
 Его надо еще обучать, тк до сих пор в некотрых местах работает некоректно.
@@ -11,5 +13,6 @@
 ```
 pip install cudatoolkit=11.8
 pip install opencv-python
+pip install Pillow==9.5.0
 ```
 Еще вам надо будет скачать [cuDNN](https://developer.nvidia.com/cudnn) тоже под CUDA 11.8.

@@ -3,7 +3,7 @@ import torch.backends.cudnn as cudnn
 import torch.optim
 import torch.utils.data
 # import torch_directml
-from model_ssd import SSD300, MultiBoxLoss
+from model import SSD300, MultiBoxLoss
 from datasets import PascalVOCDataset
 from lib import *
 import warnings
@@ -23,7 +23,7 @@ checkpoint = 'checkpoint_ssd300.pth.tar' # Загрузка чекпоинта
 # checkpoint = None # Если нет чекпоинта, то раскомментируй строку
 batch_size = 16  # Размер пакета
 iterations = 12000  # Количество итераций обучения
-workers = 1  # Мультипроцессорность
+workers = 0  # Мультипроцессорность
 print_freq = 1  # Через сколько пакетов будут обновлядтся данные в терминале
 lr = 1e-2  # Скорость обучения
 decay_lr_at = [8000, 10000]  # скорость обучения снижается после стольких итераций

@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 # Форматирование при печати
 pp = PrettyPrinter()
 
-# Параметры запуска оценивания
+# Параметры запуска  ъ\ оценивания
 data_folder = './' # Корневаяя папка с программой
 keep_difficult = True  # difficult ground truth objects must always be considered in mAP calculation, because these objects DO exist!
 batch_size = 1 # Размер пакетов (лучше ставить от 16 до 64)
