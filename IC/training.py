@@ -5,15 +5,15 @@ import torch.utils.data
 import torchvision.transforms as transforms
 from torch import nn
 from torch.nn.utils.rnn import pack_padded_sequence
-from models import Encoder, DecoderWithAttention
+from model import Encoder, DecoderWithAttention
 from datasets import CaptionDataset
-from lib_ic import *
+from lib import *
 from nltk.translate.bleu_score import corpus_bleu
 import warnings
 
 warnings.filterwarnings("ignore", category=UserWarning)
 # Параметры данных
-data_folder = 'C:/Users/Moon/Desktop/project/SSDPyTorch' # Папка с файлами данных, сохраненными после запуска create_input_files.py
+data_folder = 'C:/Users/Moon/Desktop/project/SSDPyTorch/JSON' # Папка с файлами данных, сохраненными после запуска create_input_files.py
 data_name = 'coco_5_cap_per_img_5_min_word_freq' # базовое имя, совместно используемое файлами данных
 
 # Параметры модели
@@ -37,7 +37,7 @@ alpha_c = 1. # Параметр регуляризации для "двойно�
 best_bleu4 = 0. # Счет BLEU-4 прямо сейчас
 print_freq = 1 # Через сколько пакетов будет выводится информация в консоли
 fine_tune_encoder = False # Настройка энкодера
-# checkpoint = './BEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar' # Путь к чекпоинту, если он есть
+# checkpoint = 'C:/Users/Moon/Desktop/project/SSDPyTorch/checpoints/BEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar' # Путь к чекпоинту, если он есть
 checkpoint = None
 
 
@@ -204,7 +204,7 @@ def train(train_loader, encoder, decoder, criterion, encoder_optimizer, decoder_
             encoder_optimizer.step()
 
         # Показатели
-        top5 = accuracy(scores, targets, 5)
+        top5 = accuracy_ic(scores, targets, 5)
         losses.update(loss.item(), sum(decode_lengths))
         top5accs.update(top5, sum(decode_lengths))
         batch_time.update(time.time() - start)
@@ -277,7 +277,7 @@ def validate(val_loader, encoder, decoder, criterion):
 
             # Показатели
             losses.update(loss.item(), sum(decode_lengths))
-            top5 = accuracy(scores, targets, 5)
+            top5 = accuracy_ic(scores, targets, 5)
             top5accs.update(top5, sum(decode_lengths))
             batch_time.update(time.time() - start)
 

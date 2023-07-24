@@ -10,7 +10,7 @@ import warnings
 
 warnings.filterwarnings("ignore", category=UserWarning)
 # Data parameters
-data_folder = 'C:/Users/Moon/Desktop/project/SSDPyTorch'  # folder with data files
+data_folder = 'C:/Users/Moon/Desktop/project/SSDPyTorch/JSON'  # folder with data files
 keep_difficult = True  # use objects considered difficult to detect?
 
 # Параметры модели
@@ -19,7 +19,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # device = torch_directml.device()
 
 # Параметры обучения
-checkpoint = 'checkpoint_ssd300.pth.tar' # Загрузка чекпоинта
+checkpoint = 'C:/Users/Moon/Desktop/project/SSDPyTorch/checkpoints/checkpoint_ssd300.pth.tar' # Загрузка чекпоинта
 # checkpoint = None # Если нет чекпоинта, то раскомментируй строку
 batch_size = 16  # Размер пакета
 iterations = 12000  # Количество итераций обучения

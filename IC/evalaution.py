@@ -3,7 +3,7 @@ import torch.optim
 import torch.utils.data
 import torchvision.transforms as transforms
 from datasets import CaptionDataset
-from lib_ic import *
+from lib import *
 from nltk.translate.bleu_score import corpus_bleu
 import torch.nn.functional as F
 from tqdm import tqdm
@@ -11,10 +11,10 @@ import warnings
 
 warnings.filterwarnings("ignore", category=UserWarning)
 # Параметры
-data_folder = 'C:/Users/Moon/Desktop/project/SSDPyTorch'  # Папка с файлами данных, сохраненными create_input_files.py
+data_folder = 'C:/Users/Moon/Desktop/project/SSDPyTorch/JSON'  # Папка с файлами данных, сохраненными create_input_files.py
 data_name = 'coco_5_cap_per_img_5_min_word_freq'  # Базовое имя, совместно используемое файлами данных
-checkpoint = './BEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar'  # Файл чекпоинта
-word_map_file = './WORDMAP_coco_5_cap_per_img_5_min_word_freq.json'  # Карта слов
+checkpoint = 'C:/Users/Moon/Desktop/project/SSDPyTorch/checkpoints/BEST_checkpoint_coco_5_cap_per_img_5_min_word_freq.pth.tar'  # Файл чекпоинта
+word_map_file = 'C:/Users/Moon/Desktop/project/SSDPyTorch/JSON/WORDMAP_coco_5_cap_per_img_5_min_word_freq.json'  # Карта слов
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")  # Устанавливает устройство для тензоров модели и PyTorch
 cudnn.benchmark = True  # Устанавливается в значение true только в том случае, если входные данные для модели имеют фиксированный размер; в противном случае возникают большие вычислительные затраты
 

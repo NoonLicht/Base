@@ -5,7 +5,6 @@ import os
 import h5py
 from PIL import Image
 from lib import transform
-from lib_ic import *
 
 
 class PascalVOCDataset(Dataset):
@@ -77,7 +76,6 @@ class PascalVOCDataset(Dataset):
         images = torch.stack(images, dim=0)
 
         return images, boxes, labels, difficulties  # тензор (N, 3, 300, 300)
-    
 
 class CaptionDataset(Dataset):
 

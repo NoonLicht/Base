@@ -15,7 +15,7 @@ keep_difficult = True  # difficult ground truth objects must always be considere
 batch_size = 1 # Размер пакетов (лучше ставить от 16 до 64)
 workers = 1 # Мультипроцессорность (запускает несколько процессов для ускорения вычисления, количество ядер = количество workers)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-checkpoint = './checkpoint_ssd300.pth.tar' # Путь к чекпоинту
+checkpoint = 'C:/Users/Moon/Desktop/project/SSDPyTorch/checkpoints/checkpoint_ssd300.pth.tar' # Путь к чекпоинту
 pin_memory = False # Если True, загрузчик данных скопирует тензоры в закрепленную память устройства/CUDA, прежде чем вернуть их. Стоит ставить True только при работе через видеокарту Nvidia
 
 # Загрузка чекпоинта 

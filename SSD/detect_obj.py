@@ -11,7 +11,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # device = torch_directml.device()
 
 # Загрузка чекпоинта
-checkpoint = 'checkpoint_ssd300.pth.tar'
+checkpoint = 'C:/Users/Moon/Desktop/project/SSDPyTorch/checkpoints/checkpoint_ssd300.pth.tar'
 checkpoint = torch.load(checkpoint)
 start_epoch = checkpoint['epoch'] + 1
 print('\nЗагруженна контрольная точка из эпохи %d.\n' % start_epoch)
